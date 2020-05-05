@@ -17,7 +17,7 @@ BuildRequires:  mesa-common-devel
 BuildRequires:  pkgconfig(xkbcommon)
 BuildRequires:  pkgconfig(wpe-1.0)
 BuildRequires:  wayland-devel
-BuildRequires:  glib2-devel
+BuildRequires:  glib2.0-devel
 
 %description
 A WPE backend designed for Linux desktop systems.
