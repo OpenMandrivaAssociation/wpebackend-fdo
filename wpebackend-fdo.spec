@@ -17,6 +17,7 @@ BuildRequires:  meson
 BuildRequires:  mesa-common-devel
 BuildRequires:  pkgconfig(xkbcommon)
 BuildRequires:  pkgconfig(wpe-1.0)
+BuildRequires:  pkgconfig(epoxy)
 BuildRequires:  wayland-devel
 BuildRequires:  glib2.0-devel
 
@@ -49,7 +50,7 @@ files for developing applications that use %{name}.
 %meson_build
 
 %install
-%meson_install -C build
+%meson_install
 
 %files -n %{libname}
 %license COPYING
