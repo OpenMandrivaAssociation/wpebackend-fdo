@@ -4,7 +4,7 @@
 
 
 Name:           wpebackend-fdo
-Version:        1.6.0
+Version:        1.12.0
 Release:        1
 Summary:        A WPE backend designed for Linux desktop systems
 Group:		System/Libraries
@@ -13,9 +13,11 @@ URL:            https://github.com/Igalia/%{name}
 Source0:	https://github.com/Igalia/WPEBackend-fdo/releases/download/%{version}/%{name}-%{version}.tar.xz
 
 BuildRequires:  cmake
+BuildRequires:  meson
 BuildRequires:  mesa-common-devel
 BuildRequires:  pkgconfig(xkbcommon)
 BuildRequires:  pkgconfig(wpe-1.0)
+BuildRequires:  pkgconfig(epoxy)
 BuildRequires:  wayland-devel
 BuildRequires:  glib2.0-devel
 
@@ -44,11 +46,11 @@ files for developing applications that use %{name}.
 %autosetup -p1 -n %{name}-%{version}
 
 %build
-%cmake
-%make_build
+%meson
+%meson_build
 
 %install
-%make_install -C build
+%meson_install
 
 %files -n %{libname}
 %license COPYING
