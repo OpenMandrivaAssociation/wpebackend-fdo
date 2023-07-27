@@ -4,8 +4,8 @@
 
 
 Name:           wpebackend-fdo
-Version:        1.14.1
-Release:        2
+Version:        1.14.2
+Release:        1
 Summary:        A WPE backend designed for Linux desktop systems
 Group:		System/Libraries
 License:        BSD
