@@ -4,14 +4,15 @@
 
 
 Name:           wpebackend-fdo
-Version:        1.15.90
+Version:        1.16.0
 Release:        1
 Summary:        A WPE backend designed for Linux desktop systems
 Group:		System/Libraries
 License:        BSD
 URL:            https://github.com/Igalia/%{name}
-Source0:	https://github.com/Igalia/WPEBackend-fdo/releases/download/%{version}/%{name}-%{version}.tar.xz
+Source0:	https://github.com/Igalia/WPEBackend-fdo/releases/download/%{version}/%{name}-%{version}.tar.lz
 
+BuildRequires:  lzip
 BuildRequires:  cmake
 BuildRequires:  meson
 BuildRequires:  mesa-common-devel
